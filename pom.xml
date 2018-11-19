@@ -24,9 +24,14 @@
 				<version>${mule.tools.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-                    <copyToAppsDirectory>true</copyToAppsDirectory>
-				</configuration>
-			</plugin>
+				        <deploymentType>cloudhub</deploymentType>
+				         <!-- muleVersion is the runtime version as it appears on the CloudHub interface -->
+				        <muleVersion>3.8.5</muleVersion>
+				        <username>linkbaranee</username>
+				        <password>Mindtree@123</password>
+				        <redeploy>true</redeploy>
+				        <environment>Production</environment>
+				    </configuration>			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>build-helper-maven-plugin</artifactId>
